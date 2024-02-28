@@ -1,0 +1,22 @@
+.coustom_container {
+    max-width: 1350px;
+    width: 100%;
+    margin: 0 auto;
+  
+  
+    @media ($breakpoint_XL) {
+      padding: 0 40px;
+    }
+  
+    @media ($breakpoint_LG) {
+      padding: 0 30px;
+    }
+  
+    @media ($breakpoint_MD) {
+      padding: 0 18px;
+    }
+  
+    @media ($breakpoint_SM) {
+      padding: 0 15px;
+    }
+  }
