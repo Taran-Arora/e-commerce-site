@@ -2,6 +2,9 @@
     --txt-white:white;
     --txt-black:#000;
     --green:#63b496;
+    --white-color:#fff;
+    --black-color:#000;
+    --light-white:#eeeeee;
 }
 
 
@@ -23,4 +26,3 @@ $breakpoint_50: 'max-width: 350px';
 
 $white-text:var(--txt-white);
 $black-text:var(--txt-black);
-$green:var(--green)

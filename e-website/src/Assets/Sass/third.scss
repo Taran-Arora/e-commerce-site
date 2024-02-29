@@ -1,0 +1,90 @@
+.third-section{
+    padding: 30px 0px;
+    .swiper{
+        .swiper-wrapper{
+            .swiper-slide{
+                .first-slide{
+                    background-image: url('../Images/first-slide.jpeg');
+                    height: 100%;
+                    width: 100%;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    padding: 30px 15px;
+                    height: 218px;
+                    border-radius: 6px;
+                    button{
+                        background: $green;
+                        color: $black-text;
+                        font-weight: 500;
+                        border: none;
+                        padding:10px;
+                        border-radius: 10px;
+                    }
+                    h3{
+                        font-size: 22px;
+                        font-weight: 600    ;
+                    }
+                    p{
+                        font-size: 17px;
+                        font-weight: 400;
+                        color: $black-text;
+                    }
+                }
+                .second-slide{
+                    background-image: url('../Images/slide2.jpeg');
+                    height: 100%;
+                    width: 100%;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    padding: 30px 15px;
+                    height: 218px;
+                    border-radius: 6px;
+                    button{
+                        background: $green;
+                        color: $black-text;
+                        font-weight: 500;
+                        border: none;
+                        padding:10px;
+                        border-radius: 10px;
+                    }
+                    h3{
+                        font-size: 22px;
+                        font-weight: 600    ;
+                    }
+                    p{
+                        font-size: 17px;
+                        font-weight: 400;
+                        color: $black-text;
+                    }
+                }
+                .third-slide{
+                    background-image: url('../Images/third.jpeg');
+                    height: 100%;
+                    width: 100%;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    padding: 30px 15px;
+                    height: 218px;
+                    border-radius: 6px;
+                    button{
+                        background: $green;
+                        color: $black-text;
+                        font-weight: 500;
+                        border: none;
+                        padding:10px;
+                        border-radius: 10px;
+                    }
+                    h3{
+                        font-size: 22px;
+                        font-weight: 600    ;
+                    }
+                    p{
+                        font-size: 17px;
+                        font-weight: 400;
+                        color: $black-text;
+                    }
+                }
+            }
+        }
+    }
+}

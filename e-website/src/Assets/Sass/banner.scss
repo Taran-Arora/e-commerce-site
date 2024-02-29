@@ -1,0 +1,52 @@
+.banner-section{
+    padding: 40px 0px;
+    position: relative;
+    z-index: 1;
+    height: 90vh;
+    &::before{
+        position:absolute;
+        content: "";
+        background-image: url(../Images/banner-back.jpg);
+        height: 100%;
+        width: 100%;
+        top: 0;
+        right: 0;
+        background-repeat: no-repeat;
+        z-index: -1;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .row{
+        padding:50px 0px 0px 0px;
+        .left-banner{
+            padding: 50px 0px;
+            h4{
+                font-size: 30px;
+                font-weight: 500;
+                span{
+                    color: $green;
+                    padding-right: 9px;
+
+                }
+            }
+            h1{
+                font-size: 51px;
+                font-weight: 700;
+                color: $black-text;
+            }
+            p{
+                color: $black-text;
+                font-size: 18px;
+                padding: 15px 0px;
+            }
+        }
+        .right-banner{
+            text-align: center;
+            img{
+                width: 40%;
+                height: 300px;
+            }
+        }
+    }
+}

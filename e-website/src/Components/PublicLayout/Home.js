@@ -1,10 +1,15 @@
 import React from 'react'
+import Banner from './Banner'
+import OurProducts from './OurProducts'
+import Third from './Third'
 
 const Home = () => {
   return (
-    <div className='coustom_container'>
-        sds
-    </div>
+    <>
+        <Banner/>
+        <OurProducts/>
+        <Third/>
+        </>   
   )
 }
 
