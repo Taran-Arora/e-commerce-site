@@ -3,6 +3,9 @@
          padding: 0;
          background: $green;
          box-shadow: 0px 0px 4px grey;
+         @media($breakpoint_LG){
+            padding: 23px 0px;
+         }
          
         .navbar-collapse{
             .navbar-nav{
@@ -15,9 +18,17 @@
                     &:hover{
                         color: $white-text;
                     }
+                    @media($breakpoint_LG){
+                        padding: 20px 10px;
+                        font-size: 22px;
+                    }
                 }
             }
             .wishlist{
+                @media($breakpoint_LG){
+                    flex-direction: column;
+                    align-items: start !important;
+                }
                 a{
                     text-decoration: none;
                     color: $black-text;
@@ -39,6 +50,8 @@
                         color: $white-text;
                     }
                 }
+
+                
             }
     
         
@@ -58,6 +71,10 @@
         background: none;
         transition: all 0.3s linear;
         font-weight: 500;
+        @media($breakpoint_LG){
+            padding: 0;
+            font-size: 22px;
+        }
     }
     .dropdown-content {
         display: none;
@@ -95,5 +112,10 @@
 .product-dropdown{
     position: relative;
     top: 15px;
+    @media($breakpoint_LG){
+        display: block;
+        padding: 0px 10px;
+        margin-bottom: 28px;
+     }
 }
 

@@ -7,6 +7,8 @@ import Reset from './Components/Loginlayout/Reset'
 import Header from './Components/HeadLayout/Header';
 import Footer from './Components/HeadLayout/Footer';
 import Home from './Components/PublicLayout/Home';
+import Header1 from './Components/HeadLayout/Header1';
+import AddtoCart from './Components/PublicLayout/AddtoCart';
 
 
 function App() {
@@ -21,9 +23,9 @@ function App() {
   function PublicLayout(){
     return(
       <>
-      <Header />
+      <Header1 />
       <Outlet />
-      {/* <Footer /> */}
+      <Footer />
       </>
     )
   }
@@ -43,6 +45,8 @@ function App() {
 
       <Route element={<PublicLayout/>}>
       <Route path="/" element={<Home />}/>
+      <Route path="/cart" element={<AddtoCart />}/>
+
       </Route>
  
       </Routes>

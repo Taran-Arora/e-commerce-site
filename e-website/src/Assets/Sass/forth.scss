@@ -1,0 +1,40 @@
+.forth-section{
+    padding: 40px 0px;
+    position: relative;
+    z-index: 1;
+    &::before{
+        position: absolute;
+        content: "";
+        background-image: url('../Images/life.png');
+        height: 100%;
+        width: 400px;
+        left: -100px;
+        top: 0px;
+        background-repeat: no-repeat;
+        z-index: -1;
+
+    }
+    .row{
+        .forth-first{
+            background: $light-white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 12px;
+            svg{
+                color: $green;
+                font-size: 44px;
+            }
+            h3{
+                font-size: 20px;
+                text-align: center;
+                font-weight: 600;
+                color: $black-text;
+            }
+            p{
+                text-align: center;
+                color: $black-text;
+                font-size: 16px;
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+.fifth {
+    padding: 40px 0px;
+
+    .great {
+        text-align: center;
+        color: $green;
+        font-size: 35px;
+        font-weight: 600;
+    }
+
+    .lorem {
+        text-align: center;
+        padding: 10px 0px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .row {
+        padding: 40px 0px;
+        .fifth_first {
+            background: $light-white;
+            padding: 30px;
+            @media($breakpoint_LG){
+                padding:10px;
+            }
+            @media($breakpoint_SM){
+                margin-top: 60px;
+            }
+
+
+            .image-div {
+                margin-top: -62px;
+                text-align: center;
+
+                img {
+                    width: 80px;
+                    border-radius: 50%;
+                    background: $white-color;
+                    padding: 10px;
+
+                }
+            }
+
+            .title {
+                text-align: center;
+                padding: 10px 0;
+                color: #696262;
+                font-weight: 500;
+                font-size: 18px;
+                margin: 0;
+
+            }
+            h4{
+                text-align: center;
+                color: $black-text;
+                font-size: 22px;
+                font-weight: 600;
+            }
+            .sit{
+                text-align: center;
+                font-size: 17px;
+                font-weight: 400;
+                
+            }
+            .star-div{
+                text-align: center;
+                color: #f5885f;
+            }
+        }
+        .third-card{
+            @media($breakpoint_MD){
+                margin-top: 60px;
+            }
+        }
+    }
+}
