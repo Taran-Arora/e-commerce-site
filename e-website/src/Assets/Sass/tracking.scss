@@ -1,0 +1,60 @@
+.main-tracking1-sec {
+    .sec-tracking1 {
+        margin: 84px 0px 20px 0px;
+
+        .tracking1-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $sky-light;
+            height: 70px;
+
+            h2 {
+                font-size: 22px;
+                margin: 0;
+                padding-left: 75px;
+
+                @media($breakpoint_450) {
+                    font-size: 18px;
+                    padding-left: 30px;
+                }
+            }
+
+            span {
+                padding-right: 40px;
+            }
+
+            .tracking1-set {
+                text-decoration: none;
+                color: $green;
+                margin-right: 10px;
+                font-weight: 600;
+
+            }
+
+
+        }
+    }
+    .main-cards-tracking{
+        padding: 5px 0px 25px 0px;
+
+    
+    .card-body{
+       
+        .card-tracking{
+            background-color: $card-color;
+            border: 2px solid $border-color;
+          
+            padding: 30px;
+            h3{
+                text-align: center;
+
+            }
+            p{
+                text-align: center;
+
+            }
+        }
+    }
+}
+}

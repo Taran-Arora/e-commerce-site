@@ -9,11 +9,6 @@ import Footer from './Components/HeadLayout/Footer';
 import Home from './Components/PublicLayout/Home';
 import Header1 from './Components/HeadLayout/Header1';
 import AddtoCart from './Components/PublicLayout/AddtoCart';
-import Wishlist from './Components/PublicLayout/Wishlist';
-import About from './Components/PublicLayout/About';
-import Checkout from './Components/PublicLayout/Checkout';
-import Service from './Components/PublicLayout/Service';
-import FootUper from './Components/PublicLayout/FootUper';
 
 
 function App() {
@@ -52,9 +47,6 @@ function App() {
       <Route element={<PublicLayout/>}>
       <Route path="/" element={<Home />}/>
       <Route path="/cart" element={<AddtoCart />}/>
-      <Route path="/wish-list" element={<Wishlist />}/>
-      <Route path="/about" element={<About />}/>
-
 
       <Route path='/checkout' element={<Checkout />}/>
       <Route path='/service' element={<Service />}/>
