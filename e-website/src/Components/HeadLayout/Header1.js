@@ -97,23 +97,23 @@ const Header1 = () => {
     },
     {
       LinkName: "About",
-      LinkUrl: '/',
+      LinkUrl: '/about',
       dropdown: null
     },
     {
       LinkName: "Services",
-      LinkUrl: '',
-      dropdown: [
-        {
-          dropLinkName: "Home Delivery",
-          dropLinkUrl: '/'
-        },
-        {
-          dropLinkName: "Free Of Cost",
-          dropLinkUrl: '/'
-        },
+      LinkUrl: '/service',
+      // dropdown: [
+      //   {
+      //     dropLinkName: "Home Delivery",
+      //     dropLinkUrl: '/'
+      //   },
+      //   {
+      //     dropLinkName: "Free Of Cost",
+      //     dropLinkUrl: '/'
+      //   },
 
-      ],
+      // ],
     },
     {
       LinkName: "Category",

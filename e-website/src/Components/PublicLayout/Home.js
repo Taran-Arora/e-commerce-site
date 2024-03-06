@@ -14,8 +14,7 @@ const Home = () => {
         <Third/>
         <Forth/>
         <Fifth/>
-        <FootUper/>
-        </>   
+         </>   
   )
 }
 

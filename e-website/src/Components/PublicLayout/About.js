@@ -18,8 +18,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import team1 from '../../Assets/Images/team-1.jpg'
-import FootUper from '../PublicLayout/FootUper'
-import wave from '../../Assets/Images/bg-shape-6.png'
+ import wave from '../../Assets/Images/bg-shape-6.png'
 const About = () => {
     return (
         <div className='about'>
@@ -189,8 +188,7 @@ const About = () => {
                 </div>
             </div>
 
-            <FootUper/>
-        </div>
+         </div>
     )
 }
 

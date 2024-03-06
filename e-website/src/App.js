@@ -13,6 +13,7 @@ import Wishlist from './Components/PublicLayout/Wishlist';
 import About from './Components/PublicLayout/About';
 import Checkout from './Components/PublicLayout/Checkout';
 import Service from './Components/PublicLayout/Service';
+import FootUper from './Components/PublicLayout/FootUper';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
       <>
       <Header1 />
       <Outlet />
+      <FootUper/>
       <Footer />
       </>
     )
