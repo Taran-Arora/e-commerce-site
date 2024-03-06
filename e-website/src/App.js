@@ -9,7 +9,9 @@ import Footer from './Components/HeadLayout/Footer';
 import Home from './Components/PublicLayout/Home';
 import Header1 from './Components/HeadLayout/Header1';
 import AddtoCart from './Components/PublicLayout/AddtoCart';
-
+import Contact from './Components/PublicLayout/Contact';
+import Trackorder from './Components/PublicLayout/Trackorder';
+import { Tracking } from './Components/PublicLayout/Tracking';
 
 function App() {
 
@@ -46,6 +48,9 @@ function App() {
       <Route element={<PublicLayout/>}>
       <Route path="/" element={<Home />}/>
       <Route path="/cart" element={<AddtoCart />}/>
+      <Route path="/contact" element={<Contact />}/>
+      <Route path="/trackorder" element={<Trackorder />}/>
+      <Route path="/tracking" element={<Tracking />}/>
 
       </Route>
  

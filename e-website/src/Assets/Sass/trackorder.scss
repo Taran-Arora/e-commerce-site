@@ -1,0 +1,113 @@
+.main-track-order{
+
+.sec-track {
+    margin: 84px 0px 20px 0px;
+    @media($breakpoint_LG){
+        margin: 60px 0px 20px 0px;
+
+
+    }
+
+    .track-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $sky-light;
+        height: 70px;
+
+        h2 {
+            font-size: 22px;
+            margin: 0;
+            padding-left: 75px;
+            @media($breakpoint_450){
+                font-size: 18px;
+                padding-left: 30px;
+            }
+        }
+        span{
+            padding-right: 40px;
+        }
+
+        .home-link {
+            text-decoration: none;
+            color: $green;
+            margin-right: 10px;
+            font-weight: 600;
+
+        }
+
+
+    }
+
+
+
+
+}
+.sec-order{
+    padding: 28px 0px 50px 0px;
+    .main-shoes{
+        .shoes-img{
+            img{
+                height: 485px;
+                width: 100%;
+                border-radius: 8px;
+            
+            }
+        }
+    }
+
+}
+.main-track-heading{
+    .track-heading{
+        h2{
+            font-size: 44px;
+            font-weight: 700;
+            margin-top: 10px;
+            @media($breakpoint_LG){
+                font-size: 36px;
+            }
+            @media($breakpoint_450){
+                font-size: 30px;
+            }
+            @media($breakpoint_50){
+                font-size: 26px;
+            }
+        }
+        p{
+            margin: 0;
+            padding: 20px 0px 20px 0px;
+            @media($breakpoint_LG){
+                padding: 10px 0px 20px 0px;
+            }
+        }
+    }
+    .track-field{
+        label{
+            padding-bottom: 7px;
+            font-weight: 600;
+
+        }
+        input{
+            border: 2px solid $white-light;
+            padding: 15px 10px 15px 12px;
+            border-radius: 10px;
+            box-shadow: none;
+            margin-bottom: 10px;
+
+        }
+      
+       
+    }
+    .track-btn{
+        margin-top: 28px;
+        button{
+            padding: 16px 30px;
+            border-radius: 8px;
+            background-color: $green;
+            color: $white-color;
+            border: none;
+            font-weight: 600;
+        }
+    }
+}
+}
