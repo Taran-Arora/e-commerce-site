@@ -7,6 +7,8 @@ import Reset from './Components/Loginlayout/Reset'
 import Header from './Components/HeadLayout/Header';
 import Footer from './Components/HeadLayout/Footer';
 import Home from './Components/PublicLayout/Home';
+import Checkout from './Components/PublicLayout/Checkout';
+import Service from './Components/PublicLayout/Service';
 
 
 function App() {
@@ -43,6 +45,8 @@ function App() {
 
       <Route element={<PublicLayout/>}>
       <Route path="/" element={<Home />}/>
+      <Route path='/checkout' element={<Checkout />}/>
+      <Route path='/service' element={<Service />}/>
       </Route>
  
       </Routes>
