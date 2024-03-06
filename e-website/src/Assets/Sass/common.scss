@@ -1,7 +1,9 @@
+
 .coustom_container {
     max-width: 1350px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 20px;
   
   
     @media ($breakpoint_XL) {
@@ -27,4 +29,31 @@ input[type=number]::-webkit-outer-spin-button {
     -moz-appearance: none;
     appearance: none;
     margin: 0; 
+}
+
+h1{
+  font-family: "Manrope", sans-serif;
+  font-weight: 900 !important;
+  @media($breakpoint_SM){
+    font-size: 40px !important;
+
+  }
+  @media($breakpoint_ESM){
+    font-size: 28px !important;
+  }
+}
+
+p{
+  font-family: "Barlow", sans-serif;
+  font-weight: 500 !important;
+  @media($breakpoint_450){
+    font-size: 15px !important;
+   }
+}
+
+h3{
+  @media($breakpoint_450){
+  font-size: 19px !important;
+ }
+
 }

@@ -10,7 +10,7 @@ const Banner = () => {
         <div className='banner-section'>
             <div className='coustom_container'>
                 <Row>
-                    <Col xl={6}>
+                    <Col xl={6} lg={6} md={8}>
                         <div className='left-banner'>
                             <h4><span>100%</span>Organic Fruits</h4>
                             <h1>Explore Fresh &
@@ -28,7 +28,7 @@ const Banner = () => {
 
                         </div>
                     </Col>
-                    <Col xl={6}>
+                    <Col xl={6} lg={6} md={4}>
                         <div className='right-banner'>
                             <img src={bucket} />
                         </div>
