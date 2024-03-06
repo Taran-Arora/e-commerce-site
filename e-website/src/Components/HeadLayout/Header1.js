@@ -5,8 +5,15 @@ import 'react-responsive-modal/styles.css';
 import { Modal } from 'react-responsive-modal';
 import { Accordion, Dropdown } from "react-bootstrap";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-
+import Offcanvas from 'react-bootstrap/Offcanvas';
+import apple from '../../Assets/Images/apple.png'
+import CloseIcon from '@mui/icons-material/Close';
 const Header1 = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   const location = useLocation();
 
 
@@ -186,7 +193,94 @@ const Header1 = () => {
           </div>
 
           <div className="center-header">
-            <Link to="/" ><ShoppingCartIcon/>Cart</Link>
+            <Link to="/" onClick={handleShow}><ShoppingCartIcon/>Cart</Link>
+
+      <Offcanvas show={show} onHide={handleClose}>
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title>Cart</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          <div className="cart-body">
+                <div className="add-cart-product">
+                  <div className="first-product">
+                    <div className="image-apple">
+                          <img src={apple}/>
+                            <CloseIcon className="closs-icon"/>
+
+                    </div>
+                    <div className="title-div">
+                      <h5>Red Hot Tomato</h5>
+                      <p> 1 X $65.00</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="add-cart-product">
+                  <div className="first-product">
+                    <div className="image-apple">
+                          <img src={apple}/>
+                            <CloseIcon className="closs-icon"/>
+
+                    </div>
+                    <div className="title-div">
+                      <h5>Red Hot Tomato</h5>
+                      <p> 1 X $65.00</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="add-cart-product">
+                  <div className="first-product">
+                    <div className="image-apple">
+                          <img src={apple}/>
+                            <CloseIcon className="closs-icon"/>
+
+                    </div>
+                    <div className="title-div">
+                      <h5>Red Hot Tomato</h5>
+                      <p> 1 X $65.00</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="add-cart-product">
+                  <div className="first-product">
+                    <div className="image-apple">
+                          <img src={apple}/>
+                            <CloseIcon className="closs-icon"/>
+
+                    </div>
+                    <div className="title-div">
+                      <h5>Red Hot Tomato</h5>
+                      <p> 1 X $65.00</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="add-cart-product">
+                  <div className="first-product">
+                    <div className="image-apple">
+                          <img src={apple}/>
+                            <CloseIcon className="closs-icon"/>
+
+                    </div>
+                    <div className="title-div">
+                      <h5>Red Hot Tomato</h5>
+                      <p> 1 X $65.00</p>
+                    </div>
+                  </div>
+                </div>
+                </div> 
+
+        </Offcanvas.Body>
+        <div className="off-canvas-footer">
+          <div className="sub-total">
+            <h4>Subtotal:</h4>
+            <p>$310.00</p>
+          </div>
+
+          <div className="view-cart-btn">
+            <Link to="/cart">VIEW CART</Link>
+            
+          </div>
+        </div>
+      </Offcanvas>
           </div>
         </div>
       </header>

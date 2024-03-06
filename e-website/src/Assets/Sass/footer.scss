@@ -1,39 +1,58 @@
 .footer{
     padding: 50px 0;
-    background: $light-white;
+    background: $black-color;
+    position: relative;
+    z-index: 1;
+    .upper-footer{
     .row{
         .first-one{
             h3{
                 font-size: 22px;
                 padding: 20px 0px;
                 font-weight: 500;
-                color: $black-text;
+                color: $white-text;
+            }
+            p{
+                color: grey;
             }
             .icons{
                 display: flex;
                 gap: 12px;
                 svg{
-                    color: $black-text;
-                    background: $green;
-                    font-size: 22px;
-                    height: 30px;
-                    width: 31px;
+                     background: $white-color;
+                     height: 39px;
+                    width: 37px;
                     padding: 6px;
                     border-radius: 4px;
                     transition:all 0.3s linear;
                     cursor: pointer;
+                    border: 1px solid #dcd0d0;
                     &:hover{
                         transform: translateY(-10px);
                     
                     }
 
                 }
+                .facebook{
+                    color: #316FF6;
+                }
+                .instagram{
+                    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+                    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+                    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+                 }
+                 .twiter{
+                    color: #1DA1F2;
+                 }
+                 .telegram{
+                    color: #0088cc;
+                 }
             }
             a{
                 display: block;
                 text-decoration: none;
                 padding: 6px 0px;
-                color: $black-text;
+                color: $white-text;
                 transition: all 0.3s linear;
                 font-weight: 600;
                 &:hover{
@@ -43,6 +62,7 @@
             }
             .input-div{
                 position: relative;
+                margin-bottom: 14px;
                 input{
                     width: 100%;
                     padding: 6px;
@@ -66,8 +86,13 @@
                     cursor: pointer;
                 }
             }
+            .fruit-bucket{
+                width: 192px;
+                height: 199px;
+            }
         }
     }
-    
+}
+ 
 
 }

@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/esm/Row';
 import Col from 'react-bootstrap/esm/Col';
 import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import {Link} from 'react-router-dom'
 
 const OurProducts = () => {
     return (
@@ -32,10 +33,12 @@ const OurProducts = () => {
                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -51,13 +54,15 @@ const OurProducts = () => {
                              <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -73,13 +78,15 @@ const OurProducts = () => {
                              <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -95,13 +102,15 @@ const OurProducts = () => {
                              <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -117,13 +126,15 @@ const OurProducts = () => {
                              <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -139,13 +150,15 @@ const OurProducts = () => {
                              <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -161,13 +174,15 @@ const OurProducts = () => {
                              <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -183,13 +198,15 @@ const OurProducts = () => {
                              <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -211,13 +228,15 @@ const OurProducts = () => {
                                 <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -233,13 +252,15 @@ const OurProducts = () => {
                              <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -255,13 +276,15 @@ const OurProducts = () => {
                              <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -277,13 +300,15 @@ const OurProducts = () => {
                              <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -299,13 +324,15 @@ const OurProducts = () => {
                              <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -321,13 +348,15 @@ const OurProducts = () => {
                              <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -343,13 +372,15 @@ const OurProducts = () => {
                              <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -365,13 +396,15 @@ const OurProducts = () => {
                              <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -393,13 +426,15 @@ const OurProducts = () => {
                                 <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -415,13 +450,15 @@ const OurProducts = () => {
                              <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -437,13 +474,15 @@ const OurProducts = () => {
                              <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -459,13 +498,15 @@ const OurProducts = () => {
                              <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -481,13 +522,15 @@ const OurProducts = () => {
                              <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -503,13 +546,15 @@ const OurProducts = () => {
                              <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -525,13 +570,15 @@ const OurProducts = () => {
                              <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -547,13 +594,15 @@ const OurProducts = () => {
                              <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -575,13 +624,15 @@ const OurProducts = () => {
                                 <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -597,13 +648,15 @@ const OurProducts = () => {
                              <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -619,13 +672,15 @@ const OurProducts = () => {
                              <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -641,13 +696,15 @@ const OurProducts = () => {
                              <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -663,13 +720,15 @@ const OurProducts = () => {
                              <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -685,13 +744,15 @@ const OurProducts = () => {
                              <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -707,13 +768,15 @@ const OurProducts = () => {
                              <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -729,13 +792,15 @@ const OurProducts = () => {
                              <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -758,13 +823,15 @@ const OurProducts = () => {
                                 <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -780,13 +847,15 @@ const OurProducts = () => {
                              <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -802,13 +871,15 @@ const OurProducts = () => {
                              <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -824,13 +895,15 @@ const OurProducts = () => {
                              <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -846,13 +919,15 @@ const OurProducts = () => {
                              <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -868,13 +943,15 @@ const OurProducts = () => {
                              <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -890,13 +967,15 @@ const OurProducts = () => {
                              <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>
@@ -912,13 +991,15 @@ const OurProducts = () => {
                              <Col xl={3} lg={4} md={6} sm={6}>
 
 
-                                    <div className='first-card'>
+                                     <div className='first-card'>
                                         <div className='image-div'>
                                             <img src={mango} />
-                                            <FavoriteBorder className='wish-list' />
+                                           <p className='new-badge'>New</p>
                                             <div className='add-cart-div'>
+                                            <Link to="/wish-list">   <FavoriteBorder className='wish-list' /></Link>
+
                                                 <button className='add-cart'>
-                                                    <ShoppingCartIcon /> ADD TO CART
+                                                    <ShoppingCartIcon />
                                                 </button>
                                             </div>
                                         </div>

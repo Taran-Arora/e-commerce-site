@@ -6,21 +6,20 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import { Link } from 'react-router-dom';
+import bucket from '../../Assets/Images/buc.png'
+
 const Footer = () => {
   return (
     <div className='footer'>
+      <div className='upper-footer'>
       <div className='coustom_container'>
           <Row>
             <Col xl={3} lg={3} md={6} sm={6}>
               <div className='first-one'>
-                <h3>E-Commerce</h3>
-                <p>E-Commerce is the biggest market of grocery products. Get your daily needs from our store.</p>
-                <div className='icons'>
-                  <FacebookIcon/>
-                  <InstagramIcon/>
-                  <TwitterIcon/>
-                  <TelegramIcon/>
-                </div>
+              <h3>E-Commerce</h3>
+
+              <img src={bucket} className='fruit-bucket'/>
+
               </div>
             </Col>
             <Col xl={3} lg={3} md={6} sm={6}>
@@ -55,10 +54,30 @@ const Footer = () => {
                <TelegramIcon/>
 
                </div>
+                <p>E-Commerce is the biggest market of grocery products. Get your daily needs from our store.</p>
+            
+
+                <div className='icons'>
+                  <FacebookIcon className='facebook'/>
+                  <InstagramIcon className='instagram'/>
+                  <TwitterIcon className='twiter'/>
+                  <TelegramIcon className='telegram'/>
+                </div>
               </div>
             </Col>  
           </Row>
       </div>
+      </div>
+
+{/* <div className='coustom_container'>
+      <div className='down-footer'>
+        <div className='' >
+          <div className='image-section'>
+          <img src={apple} className='apple'/>
+          </div>
+          </div>
+        </div>
+      </div> */}
     </div>
   )
 }
