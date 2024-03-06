@@ -24,7 +24,7 @@ const Login = () => {
                 </div>
                 <Form className='form-login'>
                   <div className='form-icon'>
-                    <input type="text" className=" log-inp" placeholder="Email Address" />
+                    <input type="text" className="log-inp" placeholder="Email Address" />
                     <EmailIcon />
                   </div>
                   <div className='form-icon'>

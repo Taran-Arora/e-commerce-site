@@ -26,9 +26,9 @@ const Register = () => {
     <div className='coustom_container'>
       <Row>
         <Col lg={12}>
-          <div className='login-outer'>
+          <div className='login-outer reg-out'>
             <div className='login-inner'>
-              <div className='log-h'>
+              <div className='log-h log-hr'>
               <h1>Register</h1>
               </div>
               <Form className='form-login'>
