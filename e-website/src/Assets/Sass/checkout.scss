@@ -1,10 +1,20 @@
 .checkout-section {
   padding: 120px 0;
+  .check-upper {
+    text-align: center;
+    background-color: $green;
+    margin-bottom: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    h2 {
+      margin-bottom: 0;
+    }
+  }
   .check-summary {
     border: 1px solid $borderh-color;
     border-radius: 10px;
     padding: 20px;
-    height: 490px;
+    height: 485px;
     h4 {
       color: $green;
       margin-bottom: 30px;
@@ -31,6 +41,8 @@
     }
     .checkout-product {
       margin-top: 30px;
+      height: 200px;
+      overflow: scroll;
       .product-inner {
         display: flex;
         align-items: center;
@@ -144,6 +156,7 @@
         margin-top: 5px;
         padding: 10px 5px;
         outline: none;
+        border: 1px solid $borderh-color;
       }
     }
   }
@@ -153,6 +166,9 @@
     padding: 20px;
     margin-top: 20px;
     height: 335px;
+    @media ($breakpoint_LG) {
+      height: 315px;
+    }
     h4 {
       color: $green;
       margin-bottom: 20px;
@@ -183,12 +199,12 @@
   .checkin-buttons {
     // border: 1px solid $borderh-color;
     margin-top: 20px;
-    height: 335px;
+    height: 100%;
     border-radius: 10px;
     padding: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
 
     @media ($breakpoint_LG) {
       align-items:center;

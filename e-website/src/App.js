@@ -13,6 +13,7 @@ import Wishlist from './Components/PublicLayout/Wishlist';
 import About from './Components/PublicLayout/About';
 import Checkout from './Components/PublicLayout/Checkout';
 import Service from './Components/PublicLayout/Service';
+import ProductDetails from './Components/PublicLayout/ProductDetails';
 
 
 function App() {
@@ -56,6 +57,7 @@ function App() {
 
       <Route path='/checkout' element={<Checkout />}/>
       <Route path='/service' element={<Service />}/>
+      <Route path='/productdetails' element={<ProductDetails />}/>
       </Route>
  
       </Routes>

@@ -16,6 +16,7 @@ import totmilk from '../../Assets/Images/icon-10.png';
 import totmilk2 from '../../Assets/Images/icon-201.png';
 import totmilk3 from '../../Assets/Images/icon-202.png';
 import totmilk4 from '../../Assets/Images/icon-203.png';
+import { Link } from 'react-router-dom';
 
 const Service = () => {
     return (
@@ -35,7 +36,7 @@ const Service = () => {
                                 <div className='service-heading'>
                                     <h2>Service Page</h2>
                                     <ul>
-                                        <li>Home</li>
+                                        <li><Link to='/'>Home</Link></li>
                                         <li><KeyboardDoubleArrowRightIcon /></li>
                                         <li>Services</li>
                                     </ul>
