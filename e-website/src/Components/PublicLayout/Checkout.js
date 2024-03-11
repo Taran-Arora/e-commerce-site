@@ -2,14 +2,33 @@ import React from 'react'
 import { Col, Row } from "react-bootstrap";
 import valuepouch from '../../Assets/Images/10.jpg';
 import StarIcon from '@mui/icons-material/Star';
-import cardimg from '../../Assets/Images/paymentall.png';
+import cardimg from '../../Assets/Images/paymentall1.png';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { CountryDropdown, RegionDropdown } from 'react-country-region-selector';
 
 const Checkout = () => {
+    const [country, setCountry] = useState('');
+    const [region, setRegion] = useState('');
+
+    const selectCountry = (val) => {
+        setCountry(val);
+    };
+
+    const selectRegion = (val) => {
+        setRegion(val);
+    };
+
     return (
         <section className='checkout-section'>
             <div className='coustom_container'>
                 <Row>
+                    <Col lg={12}>
+                        <div className='check-upper'>
+                            <h2>Billing Details </h2>
+                        </div>
+
+                    </Col>
                     <Col xl={4} lg={4}>
                         <div className='check-summary'>
                             <h4>Summary</h4>
@@ -28,6 +47,38 @@ const Checkout = () => {
                                 </div>
                             </div>
                             <div className='checkout-product'>
+                                <div className='product-inner'>
+                                    <div className='product-pic'>
+                                        <img src={valuepouch} alt='pouch' />
+                                    </div>
+                                    <div className='product-pic-detail'>
+                                        <h6>Dates Value Pack Pouch</h6>
+                                        <div className='product-rating'>
+                                            <StarIcon />
+                                            <StarIcon />
+                                            <StarIcon />
+                                            <StarIcon />
+                                            <StarIcon />
+                                        </div>
+                                        <span>$</span>
+                                    </div>
+                                </div>
+                                <div className='product-inner'>
+                                    <div className='product-pic'>
+                                        <img src={valuepouch} alt='pouch' />
+                                    </div>
+                                    <div className='product-pic-detail'>
+                                        <h6>Smoked Honey Spiced Nuts</h6>
+                                        <div className='product-rating'>
+                                            <StarIcon />
+                                            <StarIcon />
+                                            <StarIcon />
+                                            <StarIcon />
+                                            <StarIcon />
+                                        </div>
+                                        <span>$</span>
+                                    </div>
+                                </div>
                                 <div className='product-inner'>
                                     <div className='product-pic'>
                                         <img src={valuepouch} alt='pouch' />
@@ -90,13 +141,7 @@ const Checkout = () => {
                                         <Col lg={6}>
                                             <div className='form-email'>
                                                 <label>City</label>
-                                                <select className='form-control'>
-                                                    <option selected disabled>City Name</option>
-                                                    <option>City 1</option>
-                                                    <option>City 2</option>
-                                                    <option>City 3</option>
-                                                    <option>City 4</option>
-                                                </select>
+                                                <input type='text' className='form-control' placeholder='Enter your city' />
                                             </div>
                                         </Col>
                                         <Col lg={6}>
@@ -108,25 +153,23 @@ const Checkout = () => {
                                         <Col lg={6}>
                                             <div className='form-email'>
                                                 <label>Country</label>
-                                                <select className='form-control'>
-                                                    <option selected disabled>Country Name</option>
-                                                    <option>Country 1</option>
-                                                    <option>Country 2</option>
-                                                    <option>Country 3</option>
-                                                    <option>Country 4</option>
-                                                </select>
+                                                <div>
+                                                    <CountryDropdown
+                                                        value={country}
+                                                        onChange={(val) => selectCountry(val)} className='form-control' />
+
+                                                </div>
                                             </div>
                                         </Col>
                                         <Col lg={6}>
                                             <div className='form-email'>
                                                 <label>State</label>
-                                                <select className='form-control'>
-                                                    <option selected disabled>State Name</option>
-                                                    <option>State 1</option>
-                                                    <option>State 2</option>
-                                                    <option>state 3</option>
-                                                    <option>State 4</option>
-                                                </select>
+                                                <div>
+                                                    <RegionDropdown
+                                                        country={country}
+                                                        value={region}
+                                                        onChange={(val) => selectRegion(val)} className='form-control' />
+                                                </div>
                                             </div>
                                         </Col>
                                     </Row>
@@ -162,7 +205,7 @@ const Checkout = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col xl={4} lg={4} md={6}>
+                    <Col xl={8} lg={8} md={6}>
                         <div className='payment-method'>
                             <h4>Payment Method</h4>
                             <p>Please select the preferred payment method to use on this order.</p>
@@ -185,7 +228,7 @@ const Checkout = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col xl={4} lg={4} md={12}>
+                    <Col lg={12}>
                         <div className='checkin-buttons'>
                             <Link to='#'>Place Order</Link>
                         </div>

@@ -11,6 +11,7 @@ import Header1 from './Components/HeadLayout/Header1';
 import AddtoCart from './Components/PublicLayout/AddtoCart';
 import FootUper from './Components/PublicLayout/FootUper';
 import About from './Components/PublicLayout/About';
+<<<<<<< HEAD
 import Checkout from './Components/PublicLayout/Checkout'
 import Service from './Components/PublicLayout/Service'
 import Contact from './Components/PublicLayout/Contact';
@@ -19,6 +20,11 @@ import { Tracking } from './Components/PublicLayout/Tracking';
 import WishList from './Components/PublicLayout/Wishlist'
 import ForDemo from './Components/PublicLayout/ForDemo';
 
+=======
+import Checkout from './Components/PublicLayout/Checkout';
+import Service from './Components/PublicLayout/Service';
+import ProductDetails from './Components/PublicLayout/ProductDetails';
+>>>>>>> origin/harpreet
 
 
 function App() {
@@ -58,6 +64,7 @@ function App() {
       <Route path="/cart" element={<AddtoCart />}/>
       <Route path='/checkout' element={<Checkout />}/>
       <Route path='/service' element={<Service />}/>
+<<<<<<< HEAD
       <Route path="/contact" element={<Contact />}/>
       <Route path="/trackorder" element={<Trackorder />}/>
       <Route path="/tracking" element={<Tracking />}/>
@@ -66,6 +73,9 @@ function App() {
       <Route path="/for-demo" element={<ForDemo/>}/>
 
 
+=======
+      <Route path='/productdetails' element={<ProductDetails />}/>
+>>>>>>> origin/harpreet
       </Route>
  
       </Routes>

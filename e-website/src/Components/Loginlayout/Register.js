@@ -15,12 +15,21 @@ const Register = () => {
     const handleTogglePassword = () => {
       setShowPassword(!showPassword);
     };
-    const [password1, setPassword1] = useState("");
-    const [showPassword1, setShowPassword1] = useState(false);
+    const [passwords, setPasswords] = useState("");
+    const [showPasswords, setShowPasswords] = useState(false);
   
-    const handleTogglePassword1 = () => {
-      setShowPassword1(!showPassword1);
+    const handleTogglePasswords = () => {
+      setShowPasswords(!showPasswords);
     };
+
+    // const handleTogglePassword = () => {
+    //   setShowPassword(!showPassword);
+    // };
+  
+    // const handleTogglePasswords = () => {
+    //   setShowPasswords(!showPasswords);
+    // };
+  
   return (
     <section className='log-section'>
     <div className='coustom_container'>
@@ -67,15 +76,15 @@ const Register = () => {
                 </div>
                 <div className='form-icon'>
                   <input
-                    type={showPassword1 ? "text" : "password1"}
-                    value={password1}
-                    onChange={(e) => setPassword1(e.target.value)}
-                    className='log-inp1'
+                    type={showPasswords ? "text" : "password"}
+                    value={passwords}
+                    onChange={(e) => setPasswords(e.target.value)}
+                    className='log-inp2'
                     placeholder="Confirm Password"
                   />
 
-                  <button className='on-btn' type="button" onClick={handleTogglePassword1}>
-                    {showPassword1 ? (
+                  <button className='on-btn' type="button" onClick={handleTogglePasswords}>
+                    {showPasswords ? (
                       <VisibilityIcon />
                     ) : (
                       <VisibilityOffIcon />
@@ -85,9 +94,7 @@ const Register = () => {
               </Form>
               <div className='form-btns form2-btns'>
               <Link to='#' className='login-btn regis-btn'>Sign up</Link>
-              {/* <Link to='#' className='forgot-btn'>Forgot Password</Link> */}
               </div>
-
               <div className='nxt-page'>
                 <p>Already have an account?</p>
                 <Link to="/login">Login</Link>
