@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Container } from '@mui/material';
 
-export const Tracking = () => {
+ const Tracking = () => {
   return (
     <div className='main-tracking1-sec'>
     <div className='sec-tracking1'>
@@ -47,3 +47,5 @@ export const Tracking = () => {
     
   )
 }
+
+export default Tracking

@@ -11,20 +11,11 @@ import Header1 from './Components/HeadLayout/Header1';
 import AddtoCart from './Components/PublicLayout/AddtoCart';
 import FootUper from './Components/PublicLayout/FootUper';
 import About from './Components/PublicLayout/About';
-<<<<<<< HEAD
-import Checkout from './Components/PublicLayout/Checkout'
-import Service from './Components/PublicLayout/Service'
-import Contact from './Components/PublicLayout/Contact';
-import Trackorder from './Components/PublicLayout/Trackorder';
-import { Tracking } from './Components/PublicLayout/Tracking';
-import WishList from './Components/PublicLayout/Wishlist'
-import ForDemo from './Components/PublicLayout/ForDemo';
-
-=======
 import Checkout from './Components/PublicLayout/Checkout';
 import Service from './Components/PublicLayout/Service';
-import ProductDetails from './Components/PublicLayout/ProductDetails';
->>>>>>> origin/harpreet
+import Contact from './Components/PublicLayout/Contact';
+import Tracking from './Components/PublicLayout/Tracking';
+import TrackOrder from './Components/PublicLayout/Trackorder';
 
 
 function App() {
@@ -64,18 +55,12 @@ function App() {
       <Route path="/cart" element={<AddtoCart />}/>
       <Route path='/checkout' element={<Checkout />}/>
       <Route path='/service' element={<Service />}/>
-<<<<<<< HEAD
-      <Route path="/contact" element={<Contact />}/>
-      <Route path="/trackorder" element={<Trackorder />}/>
-      <Route path="/tracking" element={<Tracking />}/>
-      <Route path="/about" element={<About />}/>
-      <Route path="/wish-list" element={<WishList/>}/>
-      <Route path="/for-demo" element={<ForDemo/>}/>
+      <Route path='/contact' element={<Contact />}/>
+      <Route path='/tracking' element={<Tracking />}/>
+      <Route path='/track-order' element={<TrackOrder />}/>
 
 
-=======
-      <Route path='/productdetails' element={<ProductDetails />}/>
->>>>>>> origin/harpreet
+
       </Route>
  
       </Routes>
