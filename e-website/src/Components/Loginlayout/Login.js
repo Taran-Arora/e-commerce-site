@@ -11,7 +11,7 @@ const Login = () => {
 
   const handleTogglePassword = () => {
     setShowPassword(!showPassword);
-  };
+  };  
   return (
     <section className='log-section'>
       <div className='coustom_container'>
