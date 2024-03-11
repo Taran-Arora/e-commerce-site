@@ -7,6 +7,7 @@ import Reset from './Components/Loginlayout/Reset'
 import Header from './Components/HeadLayout/Header';
 import Footer from './Components/HeadLayout/Footer';
 import Home from './Components/PublicLayout/Home';
+import Viewcart from './Components/PublicLayout/Viewcart';
 
 
 function App() {
@@ -38,11 +39,13 @@ function App() {
             <Route path='/register' element={<Register />}/>
             <Route path='/forgot' element={<Forgot />}/>
            <Route path='/reset' element={<Reset />}/>
+           
 
           </Route>
 
       <Route element={<PublicLayout/>}>
       <Route path="/" element={<Home />}/>
+      <Route path='/cart' element={<Viewcart />}/>
       </Route>
  
       </Routes>
