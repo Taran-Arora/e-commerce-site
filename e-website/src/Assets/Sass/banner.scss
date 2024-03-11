@@ -3,6 +3,9 @@
     position: relative;
     z-index: 1;
     height: 90vh;
+    @media($breakpoint_SM){
+        height: 80vh;
+    }
     &::before{
         position:absolute;
         content: "";
@@ -19,8 +22,16 @@
 
     .row{
         padding:50px 0px 0px 0px;
+        @media($breakpoint_MD){
+            // padding: 0;
+        }
         .left-banner{
             padding: 50px 0px;
+            @media($breakpoint_XL){
+                padding: 10px 0;
+            }
+    
+
             h4{
                 font-size: 30px;
                 font-weight: 500;
@@ -43,9 +54,15 @@
         }
         .right-banner{
             text-align: center;
+            @media($breakpoint_MD){
+                display: none;
+            }
             img{
                 width: 40%;
                 height: 300px;
+                @media($breakpoint_LG){
+                    width: 100%;
+                }
             }
         }
     }

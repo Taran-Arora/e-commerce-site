@@ -1,0 +1,68 @@
+.foot-uper{
+    .down-footer{
+        position: relative;
+        bottom: -54px;
+        z-index: 9;
+        .foo-sec{
+            height: 233px;
+            width: 100%;
+            background-size: cover;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+            @media($breakpoint_SM){
+                padding: 0;
+            }
+            &::after{
+                background-image: url('../Images/cta-banner.jpg');
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                background-position: inherit;
+                z-index: -1;
+
+                @media($breakpoint_SM){
+                    filter: brightness(0.5);
+                }
+            }
+            .team-title{
+                font-family: "Oleo Script", system-ui;
+                font-size: 22px;
+                color: $green;
+                margin: 0;
+                @media($breakpoint_450){
+                    font-size: 15px !important;
+                }
+            }
+            h5{
+                font-size: 28px;
+                 font-weight: 700;   
+                 margin: 11px 0px;
+                 @media($breakpoint_SM){
+                    color: $white-text;
+                }
+                @media($breakpoint_450){
+                        font-size: 18px !important;
+                }
+            }
+            button{
+                border: none;
+                background: $green;
+                font-size: 16px;
+                padding: 10px 20px;
+                border-radius: 5px;  
+                transition: all 0.3s linear;
+                &:hover{
+                    color: $white-text;
+                }              
+            }
+            
+        }
+    }
+}

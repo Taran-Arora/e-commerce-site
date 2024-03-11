@@ -8,11 +8,19 @@ import Header from './Components/HeadLayout/Header';
 import Footer from './Components/HeadLayout/Footer';
 import Home from './Components/PublicLayout/Home';
 import Viewcart from './Components/PublicLayout/Viewcart';
+import Header1 from './Components/HeadLayout/Header1';
+import AddtoCart from './Components/PublicLayout/AddtoCart';
+import FootUper from './Components/PublicLayout/FootUper';
+import About from './Components/PublicLayout/About';
+import Checkout from './Components/PublicLayout/Checkout';
+import Service from './Components/PublicLayout/Service';
+import Contact from './Components/PublicLayout/Contact';
+import Tracking from './Components/PublicLayout/Tracking';
+import TrackOrder from './Components/PublicLayout/Trackorder';
 
 
 function App() {
-
-
+  
   function LoginLayout(){
     return(
       <Outlet/>
@@ -22,8 +30,12 @@ function App() {
   function PublicLayout(){
     return(
       <>
-      <Header />
+      <Header1 />
       <Outlet />
+<<<<<<< HEAD
+=======
+      <FootUper/>
+>>>>>>> 27260d48e03ce9a5aaffaab19ecf74ef99dc963a
       <Footer />
       </>
     )
@@ -45,11 +57,20 @@ function App() {
 
       <Route element={<PublicLayout/>}>
       <Route path="/" element={<Home />}/>
-      <Route path='/cart' element={<Viewcart />}/>
+      <Route path="/cart" element={<AddtoCart />}/>
+      <Route path='/checkout' element={<Checkout />}/>
+      <Route path='/service' element={<Service />}/>
+      <Route path='/contact' element={<Contact />}/>
+      <Route path='/tracking' element={<Tracking />}/>
+      <Route path='/track-order' element={<TrackOrder />}/>
+
+
+
       </Route>
  
       </Routes>
       </Router>
+
 
 
 

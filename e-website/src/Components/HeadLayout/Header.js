@@ -14,10 +14,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
 const Header = () => {
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+   
     return (
         <div className='header'>
             <Navbar expand="lg" className="">
@@ -27,8 +24,7 @@ const Header = () => {
                     <Navbar.Collapse id="navbarScroll">
                         <Nav
                             className="m-auto my-2 my-lg-0"
-                            style={{ maxHeight: '100px' }}
-                            navbarScroll
+                             navbarScroll
                         >
                             <Nav.Link href="#action1">Home</Nav.Link>
                             <Nav.Link href="#action2">Category</Nav.Link>
@@ -58,20 +54,12 @@ const Header = () => {
                                 <FavoriteBorderIcon />
                                 Wishlist
                             </Link>
-                            <button onClick={handleShow}>
+                            <button >
                                 <ShoppingCartIcon />
                                 Cart
                             </button>
 
-                            <Offcanvas show={show} onHide={handleClose}>
-                                <Offcanvas.Header closeButton>
-                                    <Offcanvas.Title>Offcanvas</Offcanvas.Title>
-                                </Offcanvas.Header>
-                                <Offcanvas.Body>
-                                    Some text as placeholder. In real life you can have the elements you
-                                    have chosen. Like, text, images, lists, etc.
-                                </Offcanvas.Body>
-                            </Offcanvas>
+              
                         </Form>
                     </Navbar.Collapse>
                 </Container>

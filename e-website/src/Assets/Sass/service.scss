@@ -1,0 +1,161 @@
+.service-section {
+  background-color: #fafafa;
+  padding: 88px 0;
+  .service-banner {
+    padding: 120px 0;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(110, 179, 86, 0.13);
+    .shape1 {
+      position: absolute;
+      z-index: -1;
+      bottom: -1px;
+      width: 100%;
+    }
+    .tomato1 {
+      position: absolute;
+      bottom: 90px;
+      left: 20px;
+    }
+    .onion1 {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+    }
+    .leaves1 {
+      position: absolute;
+      z-index: -1;
+      right: 60px;
+      top: 50px;
+    }
+    .rollpic1 {
+      position: absolute;
+      z-index: -1;
+      left: 290px;
+      @media ($breakpoint_450) {
+        display: none;
+      }
+    }
+    .rollpic2 {
+      position: absolute;
+      z-index: -1;
+      right: 380px;
+      top: 70px;
+      @media ($breakpoint_LG) {
+        right: 278px;
+      }
+      @media ($breakpoint_450) {
+        display: none;
+      }
+    }
+    .cauli1 {
+      position: absolute;
+      z-index: -1;
+      right: 150px;
+      bottom: 80px;
+      @media ($breakpoint_450) {
+        right: 30px;
+      }
+    }
+
+    .service-heading {
+      text-align: center;
+      h2 {
+      }
+      ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        justify-content: center;
+        gap: 5px;
+        padding-right: 40px;
+        li {
+          a {
+            text-decoration: none;
+            color: $black-color;
+          }
+        }
+      }
+    }
+  }
+}
+.ser-sec-section {
+  background-color: #fafafa;
+  padding: 0 0 80px;
+  .natural-head {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  .agri-cul {
+    background-color: #e8f2e6;
+    position: relative;
+    z-index: 1;
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    @media ($breakpoint_XL) {
+      margin-top: 25px;
+    }
+
+    &:hover {
+      margin-top: -6px;
+    }
+    .agri-pic {
+    }
+    .agri-content {
+      margin-top: 30px;
+      h5 {
+        margin-bottom: 15px;
+      }
+      p {
+        color: $para-color;
+      }
+    }
+  }
+}
+.ability-section {
+  padding: 120px 0;
+  background-color: $bg-color;
+  .ability-head {
+    text-align: center;
+    margin-bottom: 60px;
+    h2 {
+      font-weight: 600;
+    }
+    p {
+      color: $para-color;
+    }
+  }
+  .total-product {
+    background-color: $white-color;
+    padding: 15px 25px;
+    border-radius: 10px;
+    border-right: 4px solid $green;
+
+    @media ($breakpoint_XL) {
+      margin-top: 10px;
+    }
+
+    .tproduct-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .num {
+        h3 {
+          font-weight: 600;
+          margin-bottom: 0;
+        }
+        h6 {
+          font-weight: 400;
+        }
+      }
+      .total-pic {
+        img {
+          width: 60px;
+          height: 60px;
+        }
+      }
+    }
+  }
+}

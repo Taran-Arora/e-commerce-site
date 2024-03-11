@@ -21,11 +21,9 @@
   .login-outer {
     border: 1px solid $green;
     max-width: 520px;
-    // margin: 0 auto;
     padding: 30px;
     border-radius: 70px 0 70px 0;
     box-shadow: 0 0 5px #edf9f4;
-    // background-color: $white-text;
     @media ($breakpoint_LG) {
       margin: auto;
       backdrop-filter: blur(5px);
@@ -40,10 +38,34 @@
         color: $black-text;
         margin-bottom: 50px;
         width: 200px;
-        height: 80px; 
+        height: 75px; 
         background-color: $green;
         position: relative;
-        top: -76px;
+        top: -65px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius:0px 20px;
+
+      }
+      .for-pass {
+        width: 380px;
+      }
+      .reset-pass {
+        width: 380px;
+      }
+    }
+    .log-hr {
+      h1 {
+        text-align: center;
+        color: $black-text;
+        margin-bottom: 50px;
+        width: 200px;
+        height: 65px; 
+        background-color: $green;
+        position: relative;
+        top: -32px;
         margin: auto;
         display: flex;
         align-items: center;
@@ -71,8 +93,8 @@
             border-radius: 0;
             outline: none;
             box-shadow: none;
-            margin-bottom: 20px;
-            padding: 10px 35px 10px 10px;
+            margin-bottom: 15px;
+            padding: 10px 40px 10px 10px;
           }
           .log-inp1 {
             width: 100%;
@@ -84,17 +106,39 @@
             border-radius: 0;
             outline: none;
             box-shadow: none;
-            padding: 10px 35px 10px 10px;
+            margin-bottom: 15px;
+            padding: 10px 40px 10px 10px;
           }
-          .on-btn {
-            background: none;
+          .log-inp2 {
+            width: 100%;
+            border-bottom: 1px solid $black-text !important;
+            // border-left: 4px solid $green !important;
+            background-color: transparent;
             border: none;
+            color: $black-text;
+            border-radius: 0;
+            outline: none;
+            box-shadow: none;
+            margin-bottom: 15px;
+            padding: 10px 40px 10px 10px;
           }
+         
+         
           svg {
             color: $green;
             position: absolute;
             right: 8px;
             top: 10px;
+          }
+          .on-btn {
+            background: none;
+            border: none;
+            color: $green;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            outline: none;
+            box-shadow: none;
           }
         }
       }
@@ -175,5 +219,8 @@
       }
 
     }
+  }
+  .reg-out {
+    padding: 0 30px 10px;
   }
 }

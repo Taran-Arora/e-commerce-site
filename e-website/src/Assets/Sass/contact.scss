@@ -1,0 +1,198 @@
+.main-sec-bread {
+    .sec-bread {
+        margin: 84px 0px 20px 0px;
+
+        .contact-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $sky-light;
+            height: 70px;
+
+            h2 {
+                font-size: 22px;
+                margin: 0;
+                padding-left: 75px;
+                @media($breakpoint_450){
+                    font-size: 18px;
+                    padding-left: 30px;
+                }
+            }
+            span{
+                padding-right: 40px;
+            }
+
+            .home-set {
+                text-decoration: none;
+                color: $green;
+                margin-right: 10px;
+                font-weight: 600;
+
+            }
+
+
+        }
+
+
+
+
+    }
+
+    .main-card-contact {
+        display: flex;
+        gap: 20px;
+        .card-row{
+            width: 100%;
+            margin: auto;
+        }
+
+        .card-contact {
+            border: 2px solid $white-light;
+            padding: 50px 30px 25px;
+            border-radius: 10px;
+            @media($breakpoint_MD){
+                margin-bottom: 18px;
+            }
+
+            .card-body {
+                .card-img {
+                    display: flex;
+                    justify-content: center;
+                    img{
+                        @media($breakpoint_LG){
+                            height: 66px;
+                        }
+                    }
+
+                }
+                
+
+                .data-heading {
+                    h3 {
+                        text-align: center;
+                        margin-top: 40px;
+                        @media($breakpoint_LG){
+                            margin-top: 28px;
+                            font-size: 20px;
+                        }
+
+                    }
+
+                    p {
+                        text-align: center;
+                        margin-top: 30px;
+                        @media($breakpoint_LG){
+                            font-size: 14px;
+                            margin-top: 16px;
+                        }
+                    }
+                 
+                }
+            }
+        }
+    }
+
+    .main-contact-form {
+        margin: 30px 30px;
+        padding: 40px 50px 50px;
+        border: 2px solid $white-light;
+        @media($breakpoint_LG){
+            margin: 23px 0px 16px 2px;
+        }
+
+        h4 {
+            margin-bottom: 30px;
+        }
+
+        .form-main {
+
+            .icon-person {
+                position: relative;
+
+                .input-set1 {
+                    position: relative;
+                    width: 100%;
+                    padding-right: 25px;
+                    margin-bottom: 30px;
+                    height: 58px;
+                    padding-left: 15px;
+                    border: 2px solid $white-light;
+                }
+
+                .user-icon {
+                    position: absolute;
+                    right: 10px;
+                    top: 18px;
+                    color: $green;
+
+                }
+            }
+
+            .main-text-area {
+                .text-area {
+                    height: 150px;
+                    width: 100%;
+                    border: 2px solid $white-light;
+                    padding: 15px 0px 0px 15px;
+
+                }
+
+                .text-area:focus-visible {
+                    border: 2px solid $green;
+                    outline: none;
+                }
+
+                .into-info {
+                    padding-top: 30px;
+
+
+                    input {
+                        margin: 7px 7px 0px 0px;
+
+                    }
+
+                }
+
+            }
+
+            .free-service-btn {
+                padding-top: 20px;
+                button {
+                    padding: 14px 24px;
+                    background-color: $green;
+                    border: none;
+                    color: $white-text;
+                    border-radius: 5px;
+
+                    
+                }
+
+            }
+
+
+        }
+      
+
+
+
+
+    }
+    .main-map-sec{
+        height: 402px;
+        .map-sec{
+            position: relative;
+
+        }
+        .map-sec::after{
+            position: absolute;
+            content: "";
+            background-image: url(../Images/world-map-background-with-decorative-red-hearts.jpg);
+            height: 400px;
+            width: 100%;
+            background-size: cover;
+        }
+
+    }
+
+
+}
