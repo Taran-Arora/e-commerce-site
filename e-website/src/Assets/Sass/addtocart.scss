@@ -122,12 +122,17 @@
     .submit-btn{
         text-align: end;
         margin-top: 10px;
-        button{
+        a{
             color:$black-text;
             background: $green;
             padding: 10px;
             border: none;
             border-radius: 10px;
+            text-decoration: none;
+            transition: all 0.3s linear;
+            &:hover{
+                color: $white-text;
+            }
         }
     }
 }

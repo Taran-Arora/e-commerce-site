@@ -123,7 +123,7 @@ const Header1 = () => {
     
     {
       LinkName: "Contact us",
-      LinkUrl: '/',
+      LinkUrl: '/contact',
       dropdown: null
     },
    

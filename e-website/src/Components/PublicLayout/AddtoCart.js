@@ -84,7 +84,7 @@ const AddtoCart = () => {
                    
                 </div>
                 <div className='submit-btn'>
-                    <button>Buy Now</button>
+                    <Link to="/checkout">Buy Now</Link>
                     </div>
             </div>
 

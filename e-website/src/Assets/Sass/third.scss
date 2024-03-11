@@ -47,6 +47,10 @@
                         border: none;
                         padding:10px;
                         border-radius: 10px;
+                        transition: all 0.3s linear;
+                        &:hover{
+                            color: $white-text;
+                        }
                     }
                     h3{
                         font-size: 22px;

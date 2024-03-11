@@ -10,14 +10,19 @@ import Home from './Components/PublicLayout/Home';
 import Header1 from './Components/HeadLayout/Header1';
 import AddtoCart from './Components/PublicLayout/AddtoCart';
 import FootUper from './Components/PublicLayout/FootUper';
+import About from './Components/PublicLayout/About';
 import Checkout from './Components/PublicLayout/Checkout'
 import Service from './Components/PublicLayout/Service'
 import Contact from './Components/PublicLayout/Contact';
 import Trackorder from './Components/PublicLayout/Trackorder';
 import { Tracking } from './Components/PublicLayout/Tracking';
+import WishList from './Components/PublicLayout/Wishlist'
+import ForDemo from './Components/PublicLayout/ForDemo';
+
+
+
 function App() {
-
-
+  
   function LoginLayout(){
     return(
       <Outlet/>
@@ -56,10 +61,16 @@ function App() {
       <Route path="/contact" element={<Contact />}/>
       <Route path="/trackorder" element={<Trackorder />}/>
       <Route path="/tracking" element={<Tracking />}/>
+      <Route path="/about" element={<About />}/>
+      <Route path="/wish-list" element={<WishList/>}/>
+      <Route path="/for-demo" element={<ForDemo/>}/>
+
+
       </Route>
  
       </Routes>
       </Router>
+
 
 
 
