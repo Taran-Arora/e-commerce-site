@@ -42,19 +42,102 @@
     .card-body{
        
         .card-tracking{
-            background-color: $card-color;
-            border: 2px solid $border-color;
+            background-color: $lightbg-color;
+            border: 1px solid $border-color;
+            padding: 22px 18px 22px 18px;
+            @media($breakpoint_MD){
+                padding: 16px 18px 16px 18px;
+            }
+            @media($breakpoint_SM){
+                margin-bottom: 15px;
+            }
           
-            padding: 30px;
+            
             h3{
                 text-align: center;
+                font-size: 22px;
+                @media($breakpoint_MD){
+                    margin-bottom: 4px;
+                    font-size: 19px;
+                
+                }
 
             }
             p{
                 text-align: center;
+                color: #777;
+                @media($breakpoint_MD){
+                    font-size: 15px;
+
+                   
+                }
 
             }
         }
     }
-}
+    .main-order-cards{
+        padding: 40px 0px 0px;
+        .cards-ditto{
+      
+        display: flex;
+        justify-content: space-between;
+        @media($breakpoint_LG){
+            justify-content: center;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+            .icon-main{
+                position: relative;
+                .icon-set22{
+                    position: absolute;
+                    left: 192px;
+                    top: 14px;
+                    color: $green;
+                }
+            }
+           
+            }
+          
+
+
+            .circle-main{
+                padding: 30px 15px;
+                background-color: $lightbg-color;
+                width: 19%;
+                text-align: center;
+                border: 1px solid $borderh-color;
+                border-radius: 4px;
+               
+                @media($breakpoint_LG){
+                    margin-bottom: 15px;
+                    flex-basis: 31%;
+                    
+                }
+                @media($breakpoint_MD){
+                    flex-basis: 30%;
+
+                }
+                @media($breakpoint_SM){
+                    flex-basis: 45%;
+                }
+                @media($breakpoint_50){
+                    flex-basis: 100%;
+                    margin-bottom: 5px;
+                }
+                svg{
+                    color: $txt-lightblack;
+                    margin-bottom: 5px;
+                }
+                h5{
+                    color: $txt-lightblack;
+                    font-size: 18px;
+                }
+                .box-icon{
+                    color: $green;
+                }
+
+            }
+        }
+       
+    }
 }

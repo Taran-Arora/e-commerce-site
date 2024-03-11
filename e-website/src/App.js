@@ -1,5 +1,5 @@
 import './Assets/Sass/style.scss';
-import { BrowserRouter as Router, Routes, Outlet,Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Outlet, Route } from "react-router-dom";
 import Login from './Components/Loginlayout/Login';
 import Register from './Components/Loginlayout/Register';
 import Forgot from './Components/Loginlayout/Forgot';
@@ -20,23 +20,20 @@ import TrackOrder from './Components/PublicLayout/Trackorder';
 
 
 function App() {
-  
-  function LoginLayout(){
-    return(
-      <Outlet/>
+
+  function LoginLayout() {
+    return (
+      <Outlet />
     )
   }
 
-  function PublicLayout(){
-    return(
+  function PublicLayout() {
+    return (
       <>
-      <Header1 />
-      <Outlet />
-<<<<<<< HEAD
-=======
-      <FootUper/>
->>>>>>> 27260d48e03ce9a5aaffaab19ecf74ef99dc963a
-      <Footer />
+        <Header1 />
+        <Outlet />
+        <FootUper />
+        <Footer />
       </>
     )
   }
@@ -46,29 +43,29 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-        <Route element={<LoginLayout />}>
+          <Route element={<LoginLayout />}>
             <Route path="/login" element={<Login />}/>
             <Route path='/register' element={<Register />}/>
             <Route path='/forgot' element={<Forgot />}/>
-           <Route path='/reset' element={<Reset />}/>
-           
+            <Route path='/reset' element={<Reset />}/>
+
 
           </Route>
 
-      <Route element={<PublicLayout/>}>
-      <Route path="/" element={<Home />}/>
-      <Route path="/cart" element={<AddtoCart />}/>
-      <Route path='/checkout' element={<Checkout />}/>
-      <Route path='/service' element={<Service />}/>
-      <Route path='/contact' element={<Contact />}/>
-      <Route path='/tracking' element={<Tracking />}/>
-      <Route path='/track-order' element={<TrackOrder />}/>
+          <Route element={<PublicLayout/>}>
+            <Route path="/" element={<Home />}/>
+            <Route path="/cart" element={<AddtoCart />}/>
+            <Route path='/checkout' element={<Checkout />}/>
+            <Route path='/service' element={<Service />}/>
+            <Route path='/contact' element={<Contact />}/>
+            <Route path='/tracking' element={<Tracking />}/>
+            <Route path='/track-order' element={<TrackOrder />}/>
 
 
 
-      </Route>
- 
-      </Routes>
+          </Route>
+
+        </Routes>
       </Router>
 
 

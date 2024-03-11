@@ -12,7 +12,10 @@
     --dark-green: #2b9d72;
     --sky-light:#ecf3e3;
     --white-light:#ededed;
+    --lightbg-color:#f7f7f8;
     --grey:grey;
+    --txt-lightblack:#777;
+    
 
 }
 
@@ -44,6 +47,8 @@ $para-color: var(--para-color);
 $borderh-color: var(--borderh-color);
 $dark-green: var(--dark-green);
 $bg-color: var(--bg-color);
+$lightbg-color:var(--lightbg-color);
+$txt-lightblack:var(--txt-lightblack);
 
 $sky-light:var(--sky-light);
 $white-light:var(--white-light);
