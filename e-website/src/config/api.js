@@ -103,10 +103,10 @@ export const _fetch = async (url, method, data, header) => {
                 return fetch(url, {
                         method: method,
                         headers: {
-                                header
-                                // 'Content-Type': 'application/json',
-                                // "Authorization": "Bearer " + LoginToken,
-                                // 'X-CSRFToken': getCookie('csrftoken') 
+                                // header
+                                'Content-Type': 'application/json',
+                                "Authorization": "Bearer " + LoginToken,
+                                'X-CSRFToken': getCookie('csrftoken') 
                         },
                         body: JSON.stringify(data),
                 }).then((response) => response.json())

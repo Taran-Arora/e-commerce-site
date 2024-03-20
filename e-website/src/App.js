@@ -51,7 +51,7 @@ function App() {
               <Route path='/forgot' element={<Forgot />} />
               <Route path='/reset' element={<Reset />} />
             </Route>
-            {/* <Route element={<PrivateRoutes />}> */}
+            <Route element={<PrivateRoutes />}>
               <Route element={<PublicLayout />}>
                 <Route path="/" element={<Home />} />
                 <Route path="/cart" element={<AddtoCart />} />
@@ -64,7 +64,7 @@ function App() {
                 <Route path='/wish-list' element={<Wishlist />} />
 
               </Route>
-            {/* </Route> */}
+            </Route>
           </Routes>
         </Router>
       </div>
