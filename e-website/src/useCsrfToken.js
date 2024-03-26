@@ -1,11 +1,18 @@
 import { useEffect } from "react";
 
 const getCookie = (name) => {
-    const cookieValue = document.cookie
-        .split('; ')
-        .find(row => row.startsWith(name))
-        .split('=')[1];
-    return cookieValue;
+    const cookieValue = document?.cookie
+    //     .split('; ')
+    //     .find(row => row.startsWith(name))
+    //     .split('=')[1];
+    // return cookieValue;
+    if (cookieValue) {
+                const cookieRow = cookieValue.split('; ')
+                    .find(row => row.startsWith(name));
+                if (cookieRow) {
+                    return cookieRow.split('=')[1];
+                }
+            }
 };
 
 const useCsrfToken = () => {

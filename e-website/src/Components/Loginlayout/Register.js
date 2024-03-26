@@ -46,54 +46,33 @@ const Register = () => {
       'password': password,
       'confirm_password': confirmPassword,
     }
+    let res = await _fetch(`${api_url}register`, 'POST', data, {});
+    console.log('res', res);
+console.log('res?.status',res?.status);
+    if (res?.status === 200) {
 
-    try {
+      localStorage.setItem('auth', 'true');
+      toasted.success(res?.data?.message);
+      navigate('/');
 
+    } else if (res?.status === 400) {
 
-      // let headers = {
-      //   'Content-Type': 'application/json',
-      // };
-
-      // if (csrfToken) {
-      //   headers['X-CSRFToken'] = csrfToken;
-      // }
-
-      let res = await _fetch(`${api_url}register`, 'POST', data, {});
-
-      console.log("res", res);
-      console.log("res?.status", res?.status);
-      console.log('here');
-
-      if (res?.status === 200) {
-
-        localStorage.setItem('auth', 'true');
-        toasted.success(res?.message);
-        navigate('/home');
-
-      } else {
-        toasted.error(res?.message);
-      }
+      toasted.error(res?.data?.message);
     }
 
-    catch (error) {
-      console.log('error', error);
-      // if (error.response) {
-      //     toasted.error(error?.response?.data?.message);
-      // }
-    }
   }
 
-  const getCookie = (name) => {
-    const cookieValue = document?.cookie;
-    if (cookieValue) {
-        const cookieRow = cookieValue.split('; ')
-            .find(row => row.startsWith(name));
-        if (cookieRow) {
-            return cookieRow.split('=')[1];
-        }
-    }
-    return null; 
-};
+  //   const getCookie = (name) => {
+  //     const cookieValue = document?.cookie;
+  //     if (cookieValue) {
+  //         const cookieRow = cookieValue.split('; ')
+  //             .find(row => row.startsWith(name));
+  //         if (cookieRow) {
+  //             return cookieRow.split('=')[1];
+  //         }
+  //     }
+  //     return null; 
+  // };
 
 
   return (
